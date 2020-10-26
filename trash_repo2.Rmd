@@ -23,6 +23,7 @@ make a plot
 
 ```{r}
 ggplot(data = trash_repo2, aes(x = species, y = bill_length_mm)) +
-	geom_jitter(aes(color = species), alpha = 0.5)
+	geom_jitter(aes(color = species), alpha = 0.5)+
+  labs(x = "Penguin Species", y = "Length of bill (mm)")
 ```
 
